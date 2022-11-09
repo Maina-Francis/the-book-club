@@ -4,7 +4,7 @@ import "../navbar.css";
 function Navbar() {
   return (
     <nav className="nav">
-      <a href="#" className="brand">
+      <a href="#" className="logo">
         The Book Club
       </a>
 

@@ -19,5 +19,17 @@ li {
 
 a {
   text-decoration: none;
-  color: darkgray;
+  color: whitesmoke;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 8vh;
+  background: #1a4e60;
+}
+
+.logo {
+  font-weight: bold;
 }
