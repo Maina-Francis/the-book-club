@@ -25,6 +25,13 @@ function Navbar() {
           </a>
         </li>
       </ul>
+
+      {/* Hamburger Icon  */}
+      <div className="hamburger">
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
+      </div>
     </nav>
   );
 }
