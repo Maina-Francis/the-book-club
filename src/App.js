@@ -4,7 +4,9 @@ import 'bootstrap/dist/js/bootstrap.js';
 import WishList from "./components/WishList";
 
 function App() {
-  return <div>App</div>;
+  return <React.Fragment>
+      <WishList/>
+  </React.Fragment>;
 }
 
 export default App;
