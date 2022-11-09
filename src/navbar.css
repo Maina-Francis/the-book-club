@@ -40,3 +40,15 @@ a {
   justify-content: space-around;
   gap: 3.5rem;
 }
+
+.hamburger div {
+  width: 3rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: whitesmoke;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
