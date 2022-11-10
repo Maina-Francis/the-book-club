@@ -4,6 +4,7 @@ import "bootstrap/dist/js/bootstrap.js";
 import Library from "./Components/Library";
 import Navbar from "./Components/navbar";
 import WishList from "./Components/WishList";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <Navbar />
     <Library />
     <WishList/>
+    <Footer/>
   </>
   )}
 
