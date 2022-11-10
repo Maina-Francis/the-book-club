@@ -4,13 +4,13 @@ import Card from "./Card";
 const Library = () => {
   const [cards, setCards] = useState([]);
 
-  useEffect(() => {
-    fetch(`http://localhost:8000/books`)
-      .then((res) => res.json())
-      .then((aniInfo) => {
-        setCards(aniInfo);
-      });
-  }, []);
+    useEffect(() => {
+        fetch(`http://localhost:8000/books`)
+        .then((res) => res.json())
+        .then((aniInfo) => {
+          setCards(aniInfo);
+        });
+      }, []);
 
   const displayCards = cards.map((book) => <Card key={book.id} book={book} />);
   return (
