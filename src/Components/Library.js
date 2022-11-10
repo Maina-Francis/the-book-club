@@ -14,13 +14,13 @@ const Library = ({cards, setCards, handleAddBooks}) => {
   return (
     <>
       <div className="container">
-      <h1>Library</h1>
+        <h1>Library</h1>
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
           {displayCards}
         </div>
-    </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Library
+export default Library;

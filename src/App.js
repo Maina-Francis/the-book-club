@@ -5,6 +5,7 @@ import Library from "./Components/Library";
 import Navbar from "./Components/navbar";
 import WishList from "./Components/WishList";
 import Reading from "./Components/Reading";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   const [cards, setCards] = useState([]);
@@ -19,7 +20,7 @@ function App() {
   }, []);
 
   const handleAddBooks = (book) =>{
-    const BookExist = reading.find((item) => item.id === book.id);
+    const BookExist = reading.find((item) => item === book);
     if (!BookExist){
       setReading([...reading, {...book, quantity: 1}])
     }
@@ -28,16 +29,20 @@ function App() {
   return (
   <>
     <Navbar />
-    <Library 
-      cards={cards}
-      setCards={setCards}
-      handleAddBooks={handleAddBooks}
-    />
-    <WishList/>
-    {/* <Reading 
-        reading={reading}
-        setReading={setReading}
-    /> */}
+    <Routes>
+        <Route path="/" element={<Library  
+          cards={cards}
+          setCards={setCards}
+          handleAddBooks={handleAddBooks} />}></Route>
+        <Route path="/library" element={<Library
+          cards={cards}
+          setCards={setCards}
+          handleAddBooks={handleAddBooks} />}></Route>
+        <Route path="/reading" element={<Reading 
+          reading={reading}
+          setReading={setReading}/>}></Route>
+        <Route path="/wishlist" element={<WishList />}></Route>
+      </Routes>
   </>
   )}
 

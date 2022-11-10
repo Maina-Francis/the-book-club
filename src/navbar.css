@@ -31,10 +31,13 @@ a {
   background: url(https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1198&q=80)
     no-repeat;
   background-size: cover;
+  /* filter: blur(3px); */
+  /* -webkit-filter: blur(3px); */
 }
 
 .logo {
   font-weight: bold;
+  font-size: 2.0rem;
 }
 
 .nav_menu {
