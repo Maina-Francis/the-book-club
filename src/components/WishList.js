@@ -8,7 +8,7 @@ const WishList = ({ books, setbooks}) => {
     genre: "",
     publisher: "",
     author: "",
-    rating: 0,
+    rating: 0
   });
 
   const handleChange = (e) => {
@@ -18,9 +18,9 @@ const WishList = ({ books, setbooks}) => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    fetch(`http://localhost:9292/books`, {
+    fetch(`http://localhost:8000/books`, {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -63,7 +63,7 @@ const WishList = ({ books, setbooks}) => {
                 <input
                   type="text"
                   className="form-control"
-                  name="image-url"
+                  name="image_url"
                   placeholder="Enter image url"
                   onChange={handleChange}
                 />
@@ -91,10 +91,10 @@ const WishList = ({ books, setbooks}) => {
               <div className="mb-3">
                 <label>Author</label>
                 <input
-                  type="number"
+                  type="text"
                   className="form-control"
-                  name="author_id"
-                  placeholder="Enter Author's id"
+                  name="author"
+                  placeholder="Enter Author name"
                   onChange={handleChange}
                 />
               </div>
