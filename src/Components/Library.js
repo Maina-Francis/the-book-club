@@ -5,12 +5,12 @@ const Library = () => {
     const [cards, setCards] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:9292/books`)
+        fetch(`http://localhost:3000/books`)
         .then((res) => res.json())
         .then((aniInfo) => {
           setCards(aniInfo);
         });
-      }, [cards]);
+      }, []);
 
     const displayCards = cards.map((book) => (
         <Card
@@ -20,7 +20,12 @@ const Library = () => {
       ));
   return (
     <>
-    {displayCards}
+      <div className="container">
+      <h1>Library</h1>
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+          {displayCards}
+        </div>
+    </div>
     </>
   )
 }

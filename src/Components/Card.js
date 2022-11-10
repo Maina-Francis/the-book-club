@@ -6,7 +6,7 @@ const Card = ({book}) => {
       <div className="col">
         <div className="card h-100">
           <img
-            src={book.image}
+            src={book.image_url}
             className="card-img-top"
             alt="..."
             height={330}
@@ -20,14 +20,14 @@ const Card = ({book}) => {
             <div className="card-button row d-flex justify-content-between">
               <button
                 onClick={()=>{}}
-                className="btn btn-primary ms-2 mb-1"
+                className="btn btn-info ms-2 mb-1"
                 style={{ width: "120px" }}
               >
-                Add to Cart
+                Add to Reading
               </button>
               <button
                 onClick={()=>{}}
-                className="btn btn-danger ms-2 mb-1"
+                className="btn btn-warning ms-2 mb-1"
                 style={{ width: "120px" }}
               >
                 Delete
