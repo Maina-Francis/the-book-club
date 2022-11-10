@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ReadingCard = ({book}) => {
+const ReadingCard = ({book, handleRemove}) => {
   return (
     <>
       <div className="col">
@@ -19,7 +19,7 @@ const ReadingCard = ({book}) => {
             <p className="card-text text-success">{book.rating}⭐⭐⭐⭐</p>
             <div className="card-button row d-flex justify-content-between">
               <button
-                onClick={()=>{}}
+                onClick={()=>handleRemove()}
                 className="btn btn-danger ms-2 mb-1 justify-content-center"
                 style={{ width: "150px" }}
               >

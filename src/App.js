@@ -20,9 +20,16 @@ function App() {
   }, []);
 
   const handleAddBooks = (book) =>{
-    const BookExist = reading.find((item) => item === book);
+    const BookExist = reading.find((item) => item.id === book.id);
     if (!BookExist){
-      setReading([...reading, {...book, quantity: 1}])
+      setReading([...reading, book])
+    }
+  }
+
+  const handleRemove = (book) =>{
+    const BookExist = reading.find((item) => item !== book);
+    if (BookExist){
+      setReading([]);
     }
   }
 
@@ -40,7 +47,8 @@ function App() {
           handleAddBooks={handleAddBooks} />}></Route>
         <Route path="/reading" element={<Reading 
           reading={reading}
-          setReading={setReading}/>}></Route>
+          setReading={setReading}
+          handleRemove={handleRemove}/>}></Route>
         <Route path="/wishlist" element={<WishList />}></Route>
       </Routes>
   </>

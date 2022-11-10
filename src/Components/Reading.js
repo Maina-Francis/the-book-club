@@ -1,13 +1,14 @@
 import React from "react";
 import ReadingCard from "./ReadingCard";
 
-const Reading = ({ reading, setReading }) => {
+const Reading = ({ reading, setReading, handleRemove }) => {
   const displayCards = reading.map((book) => (
     <ReadingCard
       key={book.id}
       book={book}
       reading={reading}
       setReading={setReading}
+      handleRemove={handleRemove}
     />
   ));
   return (
