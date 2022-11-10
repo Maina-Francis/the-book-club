@@ -109,7 +109,7 @@ const WishList = ({ books, setbooks}) => {
                 />
               </div>
               <div>
-                <button type="submit" className="btn btn-info">
+                <button type="submit" className="btn btn-info"> 
                   Submit
                 </button>
               </div>
