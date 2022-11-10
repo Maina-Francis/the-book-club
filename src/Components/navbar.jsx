@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   // hamburger active state
@@ -21,26 +22,26 @@ function Navbar() {
 
   return (
     <nav className="nav">
-      <a href="#" className="logo">
+      <Link to="/" className="logo">
         The Book Club
-      </a>
+      </Link>
 
       {/* Navbar menu  */}
       <ul className={active}>
         <li className="nav_item">
-          <a href="#" className="nav_link">
+          <Link to="/library" className="nav_link">
             Library
-          </a>
+          </Link>
         </li>
         <li className="nav_item">
-          <a href="#" className="nav_link">
+          <Link to="/reading" className="nav_link">
             Reading
-          </a>
+          </Link>
         </li>
         <li className="nav_item">
-          <a href="#" className="nav_link">
+          <Link to="/wishlist" className="nav_link">
             Wishlist
-          </a>
+          </Link>
         </li>
       </ul>
 
