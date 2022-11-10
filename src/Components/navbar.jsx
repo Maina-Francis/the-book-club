@@ -22,6 +22,7 @@ function Navbar() {
 
   return (
     <nav className="nav">
+      <div className="bg-image"></div>
       <Link to="/" className="logo">
         The Book Club
       </Link>
