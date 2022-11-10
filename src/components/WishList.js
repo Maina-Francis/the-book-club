@@ -7,6 +7,7 @@ const WishList = ({ books, setbooks}) => {
     image_url: "",
     genre: "",
     publisher: "",
+    author: "",
     rating: 0,
   });
 
@@ -57,6 +58,16 @@ const WishList = ({ books, setbooks}) => {
                 />
               </div>
               <div className="mb-3">
+                <label>Image</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  name="image-url"
+                  placeholder="Enter image url"
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="mb-3">
                 <label>Genre</label>
                 <input
                   type="text"
@@ -97,7 +108,7 @@ const WishList = ({ books, setbooks}) => {
                 />
               </div>
               <div>
-                <button type="submit" className="btn btn-primary">
+                <button type="submit" className="btn btn-success">
                   Submit
                 </button>
               </div>
