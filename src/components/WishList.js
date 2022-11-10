@@ -20,7 +20,7 @@ const WishList = ({ books, setbooks}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch(`https://react-anime-merch-api.herokuapp.com/data`, {
+    fetch(`http://localhost:9292/books`, {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -32,28 +32,29 @@ const WishList = ({ books, setbooks}) => {
       .then((data) => {
         const newData = [...books, data];
         setbooks(newData);
+        console.log(newData)
       });
     e.target.reset();
   };
 
   return (
     <div className="container">
-      <h2 className="mb-3 text-center">Contribute to our Library</h2>
-      <p className="mb-3">
-      In case you feel there is an educative interesting  book we need to add to our library
-       feel free  to request them by filling in the necessary details in the form.
+      <h2 className="mt-5 text-center"><b>Contribute to the Library</b></h2>
+      <p className="mb-2 text-center">
+      If you have an interesting book that you wish to add to the library, <br></br>
+       feel free  to fill in the necessary details in the form.
       </p>
-      <div className="row d-flex justify-content-center mt-5 mb-3">
+      <div className="row d-flex justify-content-center mt-4 mb-3">
           <div className="col-md-4">
             <form onSubmit={handleSubmit}>
-              <h4 className="text-center">Contribute Book Details Form</h4>
+              <h4 className="text-center">Book Details Form</h4>
               <div className="mb-3">
                 <label>Title</label>
                 <input
                   type="text"
                   className="form-control"
                   name="title"
-                  placeholder="Enter the title of the book"
+                  placeholder="Enter the book title"
                   onChange={handleChange}
                 />
               </div>
@@ -73,7 +74,7 @@ const WishList = ({ books, setbooks}) => {
                   type="text"
                   className="form-control"
                   name="genre"
-                  placeholder="Enter book genre"
+                  placeholder="Enter the book genre"
                   onChange={handleChange}
                 />
               </div>
@@ -90,10 +91,10 @@ const WishList = ({ books, setbooks}) => {
               <div className="mb-3">
                 <label>Author</label>
                 <input
-                  type="text"
+                  type="number"
                   className="form-control"
                   name="author_id"
-                  placeholder="Enter Author name"
+                  placeholder="Enter Author's id"
                   onChange={handleChange}
                 />
               </div>
@@ -103,7 +104,7 @@ const WishList = ({ books, setbooks}) => {
                   type="number"
                   className="form-control"
                   name="rating"
-                  placeholder="Enter the rating of the book"
+                  placeholder="Enter the book rating"
                   onChange={handleChange}
                 />
               </div>
