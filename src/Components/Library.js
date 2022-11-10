@@ -5,7 +5,7 @@ const Library = () => {
     const [cards, setCards] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:3000/books`)
+        fetch(`http://localhost:8000/books`)
         .then((res) => res.json())
         .then((aniInfo) => {
           setCards(aniInfo);
