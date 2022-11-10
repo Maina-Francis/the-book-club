@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Card = ({book, handleAddBooks}) => {
+const ReadingCard = ({book}) => {
   return (
     <>
       <div className="col">
@@ -19,18 +19,11 @@ const Card = ({book, handleAddBooks}) => {
             <p className="card-text text-success">{book.rating}⭐⭐⭐⭐</p>
             <div className="card-button row d-flex justify-content-between">
               <button
-                onClick={()=>handleAddBooks()}
-                className="btn btn-info ms-2 mb-1"
-                style={{ width: "120px" }}
-              >
-                Add to Reading
-              </button>
-              <button
                 onClick={()=>{}}
-                className="btn btn-warning ms-2 mb-1"
-                style={{ width: "120px" }}
+                className="btn btn-danger ms-2 mb-1 justify-content-center"
+                style={{ width: "150px" }}
               >
-                Delete
+                Remove from current
               </button>
             </div>
           </div>
@@ -40,4 +33,4 @@ const Card = ({book, handleAddBooks}) => {
   )
 }
 
-export default Card
+export default ReadingCard
