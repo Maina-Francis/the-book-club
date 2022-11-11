@@ -19,7 +19,7 @@ const ReadingCard = ({book, handleRemove}) => {
             <p className="card-text text-success">{book.rating}⭐⭐⭐⭐</p>
             <div className="card-button row d-flex justify-content-between">
               <button
-                onClick={()=>handleRemove()}
+                onClick={()=>handleRemove(book)}
                 className="btn btn-danger ms-2 mb-1 justify-content-center"
                 style={{ width: "150px" }}
               >
