@@ -30,7 +30,7 @@ function App() {
   const handleRemove = (book) =>{
     const BookExist = reading.find((item) => item !== book);
     if (BookExist){
-      setReading([]);
+      setReading(reading.filter((item) => item.id !== book.id));
     }
   }
 
