@@ -1,18 +1,16 @@
-import React, { useState, useEffect } from "react";
-import Card from "./Card";
+import React from 'react'
+import Card from './Card';
 
-const Library = () => {
-  const [cards, setCards] = useState([]);
-
-    useEffect(() => {
-        fetch(`http://localhost:8000/books`)
-        .then((res) => res.json())
-        .then((aniInfo) => {
-          setCards(aniInfo);
-        });
-      }, []);
-
-  const displayCards = cards.map((book) => <Card key={book.id} book={book} />);
+const Library = ({cards, setCards, handleAddBooks}) => {
+    const displayCards = cards.map((book) => (
+        <Card
+          key={book.id}
+          book={book}
+          handleAddBooks={handleAddBooks}
+          cards={cards}
+          setCards={setCards}
+        />
+      ));
   return (
     <>
       <div className="container">

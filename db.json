@@ -6,7 +6,7 @@
       "image_url": "https://m.media-amazon.com/images/P/1501110365.01._SCLZZZZZZZ_SX500_.jpg",
       "genre": "Romance",
       "publisher": "Atria Books",
-      "author": "",
+      "author": "Colleen Hoover",
       "author_id": 1,
       "rating": 4
     },
@@ -16,7 +16,7 @@
       "image_url": "https://m.media-amazon.com/images/I/513Y5o-DYtL.jpg",
       "genre": "Self help",
       "publisher": "Penguin",
-      "author": "",
+      "author": "James Clear",
       "author_id": 2,
       "rating": 5
     },
@@ -26,7 +26,7 @@
       "image_url": "https://m.media-amazon.com/images/I/51ub6Cni4XL._SX333_BO1,204,203,200_.jpg",
       "genre": "Comedy",
       "publisher": "Amulet books",
-      "author": "",
+      "author": "Jeff Kiney",
       "author_id": 3,
       "rating": 5
     },
@@ -36,7 +36,7 @@
       "image_url": "https://books4children.pl/wp-content/uploads/2020/06/Harry-Potter-and-the-Order-of-the-Phoenix.jpg",
       "genre": "Fantasy",
       "publisher": "Bloomsbury",
-      "author": "",
+      "author": "J.K Rowling",
       "author_id": 4,
       "rating": 4
     },
@@ -46,7 +46,7 @@
       "image_url": "https://nuriakenya.com/wp-content/uploads/2022/10/it-starts-with-us-nuriakenya.jpg",
       "genre": "Romance",
       "publisher": "Atria Books",
-      "author": "",
+      "author": "Colleen Hoover",
       "author_id": 1,
       "rating": 4
     },
@@ -56,7 +56,7 @@
       "image_url": "https://i1.sndcdn.com/artworks-000412627653-rccvxb-t500x500.jpg",
       "genre": "Fantasy",
       "publisher": "Bloomsbury",
-      "author": "",
+      "author": "J.K Rowling",
       "author_id": 4,
       "rating": 5
     },
@@ -66,45 +66,18 @@
       "image_url": "https://m.media-amazon.com/images/P/B09T6H915S.01._SCLZZZZZZZ_SX500_.jpg",
       "genre": "Comedy",
       "publisher": "Amulet books",
-      "author": "",
+      "author": "Jeff Kiney",
       "author_id": 3,
       "rating": 4
     },
     {
       "id": 8,
-      "title": "The Very Hungry Caterpillar",
-      "image_url": "https://m.media-amazon.com/images/I/41w4B0f21VL._SY349_BO1,204,203,200_.jpg",
-      "genre": "Children's Classics",
-      "publisher": "World Publishing Company",
-      "author": "Eric Carle",
-      "rating": "4"
-    },
-    {
-      "id": 9,
-      "title": "",
-      "image_url": "",
-      "genre": "",
-      "publisher": "",
-      "author": "",
-      "rating": 0
-    },
-    {
-      "id": 10,
-      "title": "",
-      "image_url": "",
-      "genre": "",
-      "publisher": "",
-      "author": "",
-      "rating": 0
-    },
-    {
-      "id": 11,
-      "title": "",
-      "image_url": "",
-      "genre": "",
-      "publisher": "",
-      "author": "",
-      "rating": 0
+      "title": "My Vampire System",
+      "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659295186l/61799471._SY475_.jpg",
+      "genre": "Fantasy",
+      "publisher": "Webnovel",
+      "author": "JKS Manga",
+      "rating": "5"
     }
   ]
 }
