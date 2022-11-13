@@ -22,6 +22,10 @@ a {
   color: whitesmoke;
 }
 
+a:hover{
+  color: #fff;
+}
+
 .nav {
   font-size: 1.6rem;
   display: flex;

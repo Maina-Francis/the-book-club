@@ -1,6 +1,13 @@
 import React from 'react'
 
-const ReadingCard = ({book, handleRemove}) => {
+const ReadingCard = ({book, reading, setReading}) => {
+
+  const handleRemove = (book) =>{
+    const BookExist = reading.find((books) => books.id !== book.id);
+    if (BookExist){
+      setReading(reading.filter((books) => books.id !== book.id));
+    }
+  }
   return (
     <>
       <div className="col">

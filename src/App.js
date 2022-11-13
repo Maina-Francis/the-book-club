@@ -13,7 +13,7 @@ function App() {
   const [reading, setReading] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/books`)
+    fetch(`https://phase-3-backend-project-production.up.railway.app/books`)
     .then((res) => res.json())
     .then((bookInfo) => {
       setCards(bookInfo);
@@ -24,13 +24,6 @@ function App() {
     const BookExist = reading.find((item) => item.id === book.id);
     if (!BookExist){
       setReading([...reading, book])
-    }
-  }
-
-  const handleRemove = (book) =>{
-    const BookExist = reading.find((item) => item !== book);
-    if (BookExist){
-      setReading(reading.filter((item) => item.id !== book.id));
     }
   }
 
@@ -48,8 +41,7 @@ function App() {
           handleAddBooks={handleAddBooks} />}></Route>
         <Route path="/reading" element={<Reading 
           reading={reading}
-          setReading={setReading}
-          handleRemove={handleRemove}/>}></Route>
+          setReading={setReading}/>}></Route>
         <Route path="/wishlist" element={<WishList />}></Route>
       </Routes>
       <Footer />

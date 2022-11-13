@@ -20,7 +20,7 @@ const WishList = ({ books, setbooks}) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    fetch(`http://localhost:3000/books`, {
+    fetch(`https://phase-3-backend-project-production.up.railway.app/books`, {
       method: "POST",
       headers: {
         Accept: "application/json",
