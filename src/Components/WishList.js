@@ -7,7 +7,6 @@ const WishList = ({ books, setbooks}) => {
     image_url: "",
     genre: "",
     publisher: "",
-    author: "",
     rating: 0
   });
 
@@ -85,16 +84,6 @@ const WishList = ({ books, setbooks}) => {
                   className="form-control"
                   name="publisher"
                   placeholder="Enter book publisher"
-                  onChange={handleChange}
-                />
-              </div>
-              <div className="mb-3">
-                <label>Author</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  name="author"
-                  placeholder="Enter Author name"
                   onChange={handleChange}
                 />
               </div>

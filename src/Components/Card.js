@@ -23,7 +23,7 @@ const Card = ({ cards, setCards, book, handleAddBooks }) => {
           />
           <div className="card-body">
             <h4 className="card-title">{book.title}</h4>
-            <p className="card-text">{book.author.name}</p>
+            {/* <p className="card-text">{book.author.name}</p> */}
             <small className="text-muted">{book.genre}</small>
             <p className="card-text">{book.publisher}</p>
             <p className="card-text text-success">{book.rating}⭐⭐⭐⭐</p>
