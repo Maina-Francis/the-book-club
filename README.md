@@ -30,8 +30,13 @@ Readers can scroll through a variety of books in the library, and add them to th
 
 ## Site Preview
 ### Landing Page
+![Screenshot from 2022-11-14 21-53-24](https://user-images.githubusercontent.com/106233737/201742737-1eca2cd0-5a16-45fe-954e-f83223a0f994.png)
+
 ### Currently Reading
+![Screenshot from 2022-11-14 21-53-47](https://user-images.githubusercontent.com/106233737/201742874-b19e8a38-cb5e-4751-8d08-26631df11a5d.png)
+
 ### Wishlist form
+![Screenshot from 2022-11-14 21-53-54](https://user-images.githubusercontent.com/106233737/201742939-78a3ffaf-edaf-42a4-b617-581e447bdb9c.png)
 
 ## Technologies used
 + JSX
